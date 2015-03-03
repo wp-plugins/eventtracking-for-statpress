@@ -18,6 +18,11 @@ function jocDlChecker_init() {
 	$joc_dl_ckecker_db_version = "1.0";
 	
 function joc_dl_checker_activate() {
+	
+	if( !is_plugin_active( "statpress-reloaded/statpress.php" ) ){
+		wp_die( _e('You need to enable "Stat press"' ) );
+	}
+	
 	/*	statpress利用のため不要に
 	global $wpdb;
 	global $jal_db_version;
