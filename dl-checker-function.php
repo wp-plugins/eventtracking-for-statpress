@@ -4,7 +4,7 @@
  * Plugin Name: EventTracking for StatPress
  * Plugin URI: http://joc03.xsrv.jp/plugins-provider/event-tracking-top
  * Description: イベントトラッキングをワードプレス用プラグインStatPressに記録する
- * Version: 0.4
+ * Version: 0.5
  * Author: ueyk @ JOC-NETWORK
  * Author URI: http://joc03.xsrv.jp/plugins-provider/event-tracking-top
  * Contributors: ueyk

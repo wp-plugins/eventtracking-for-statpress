@@ -26,6 +26,8 @@ class JocDlChecker
 	
 	function dl_checker_tag_func( $atts )
 	{
+		//edit 20150305 nation
+
 		$html .= '
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
@@ -47,7 +49,7 @@ class JocDlChecker
 					"search_key" : $(this).attr("id"),
 					"os" : "' . iriGetOS( $_SERVER["HTTP_USER_AGENT"] ) . '",
 					"browser" : "' . iriGetBrowser( $_SERVER["HTTP_USER_AGENT"] ) . '",
-					"nation" : "' . iriGetLanguage( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ) . '",
+					"nation" : "' . iriDomain( $_SERVER['REMOTE_ADDR'] ) . '",
 					"search" : "",
 					"_security" : "' . wp_create_nonce("action_center") . '"
 					}
