@@ -19,7 +19,7 @@ function jocDlChecker_init() {
 	
 function joc_dl_checker_activate() {
 	
-	if( !is_plugin_active( "statpress-reloaded/statpress.php" ) ){
+	if( !is_plugin_active( "statpress/statpress.php" ) ){
 		wp_die( _e('You need to enable "Stat press"' ) );
 	}
 	
